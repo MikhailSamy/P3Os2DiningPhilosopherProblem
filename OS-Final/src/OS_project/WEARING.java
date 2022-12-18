@@ -49,10 +49,7 @@ public class WEARING extends CHANGE implements Runnable
 
     
 
-    
-
-    
-    public void run()
+     public void run()
     {
         try {
             while(true)
@@ -64,7 +61,7 @@ public class WEARING extends CHANGE implements Runnable
                     synchronized(right_glove)
                     {
                         ChangeToSleep(CurrentTime() + " Take right glove");
-                        ChangeToSleep(CurrentTime() + " Now he is wearing");
+                        ChangeToSleep(CurrentTime() + " Now he is wearing gloves");
                         ChangeToSleep(CurrentTime() + " Drop right glove");
                     }
                     ChangeToSleep(CurrentTime() + " Drop left glove");
@@ -75,6 +72,9 @@ public class WEARING extends CHANGE implements Runnable
             Thread.currentThread().interrupt();
         }
     }
+
+    
+   
 
     public WEARING getLeft_glove() {
         return left_glove;
