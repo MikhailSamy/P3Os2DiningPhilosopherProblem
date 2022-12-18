@@ -46,7 +46,6 @@ public class WEARING extends CHANGE implements Runnable
             thread.start();
         }
     }
-
     
 
      public void run()
@@ -73,8 +72,6 @@ public class WEARING extends CHANGE implements Runnable
         }
     }
 
-    
-   
 
     public WEARING getLeft_glove() {
         return left_glove;
